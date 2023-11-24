@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <script type="text/javascript">
+            function addition() {
+                var a = document.getElementById("first").value;
+                var b = document.getElementById("second").value;
+
+                var result = parseFloat(a) + parseFloat(b);
+                //alert(result);
+                document.getElementById("result").value = result;
+            }
+            function substraction() {
+                var a = document.getElementById("first").value;
+                var b = document.getElementById("second").value;
+
+                var result = parseFloat(a) - parseFloat(b);
+                //alert(result);
+                document.getElementById("result").value = result;
+            }
+            function multiplication() {
+                var a = document.getElementById("first").value;
+                var b = document.getElementById("second").value;
+
+                var result = parseFloat(a) * parseFloat(b);
+                //alert(result);
+                document.getElementById("result").value = result;
+            }
+            function division() {
+                var a = document.getElementById("first").value;
+                var b = document.getElementById("second").value;
+
+                var result = parseFloat(a) / parseFloat(b);
+                //alert(result);
+                document.getElementById("result").value = result;
+            }
+            function percentage() {
+                var a = document.getElementById("first").value;
+                var b = document.getElementById("second").value;
+
+                var result = (parseFloat(a) / parseFloat(b)) * 100;
+                //alert(result);
+                document.getElementById("result").value = result;
+            }
+        </script>
+        <form>
+            <table>
+                <tr>
+                    <td>First Value<br /><input type="text" id="first"/></td>
+                </tr>
+                <tr>
+                    <td>Second Value<br /><input type="text" id="second"/></td>
+                </tr>
+                <tr>
+                    <td>Result<br /><input type="text" id="result"/></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" onclick="addition()" value="+"/>
+                        <input type="button" onclick="substraction()" value="-"/>
+                        <input type="button" onclick="multiplication()" value="*"/>
+                        <input type="button" onclick="division()" value="/"/>
+                        <input type="button" onclick="percentage()" value="%"/><br /><br />
+                        <input type="submit" name="submit"/>
+                        <input type="reset" value="clear"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

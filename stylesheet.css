@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(198, 110, 161);
+}
+.header{
+    background-color: antiquewhite;
+    padding: 11px 0px;
+    padding-bottom: 16spx;
+    text-align: center;
+}
+.nav li{ 
+    list-style: none; 
+    display: inline-block; 
+    padding: 8px; 
+    } 
+.image{
+    float: left;
+    padding: 0px 10px;
+}
+.nav{
+    float: right;
+}
+    
